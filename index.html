@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="siteHeader">
+    <a class="brand" href="#top">My Site</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" type="button">Dark mode</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Built on a tablet, hosted on GitHub.</h1>
+      <p>This is a starter page. Change the text in index.html, tweak the colours in style.css, and add your own behaviour in script.js.</p>
+      <button id="greetBtn" type="button">Say hi</button>
+      <p id="greeting" aria-live="polite"></p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Write a few lines about yourself or what this site is for.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projectList">
+        <li><strong>Project one</strong><span>A short description of what it does.</span></li>
+        <li><strong>Project two</strong><span>Another short description.</span></li>
+        <li><strong>Project three</strong><span>Replace these with your real work.</span></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+    <p>&copy; <span id="year"></span> My Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
