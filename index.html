@@ -3,52 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My First Site</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>[Full Name] | Game Developer</title>
+  <meta name="description" content="Resume of [Full Name], IT student focused on game development.">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="siteHeader">
-    <a class="brand" href="#top">My Site</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <button id="themeToggle" type="button">Dark mode</button>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <h1>Built on a tablet, hosted on GitHub.</h1>
-      <p>This is a starter page. Change the text in index.html, tweak the colours in style.css, and add your own behaviour in script.js.</p>
-      <button id="greetBtn" type="button">Say hi</button>
-      <p id="greeting" aria-live="polite"></p>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>Write a few lines about yourself or what this site is for.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="projectList">
-        <li><strong>Project one</strong><span>A short description of what it does.</span></li>
-        <li><strong>Project two</strong><span>Another short description.</span></li>
-        <li><strong>Project three</strong><span>Replace these with your real work.</span></li>
+  <div class="page">
+    <header class="top">
+      <div class="controls">
+        <button id="themeToggle" type="button">Dark mode</button>
+        <button id="printBtn" type="button">Save as PDF</button>
+      </div>
+      <h1>[Full Name]</h1>
+      <p class="role">IT student, game development (Unity, C#)</p>
+      <ul class="contact">
+        <li>Singapore</li>
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li>[phone]</li>
+        <li><a href="https://github.com/your-username">github.com/your-username</a></li>
+        <li><a href="https://your-username.itch.io">itch.io/your-username</a></li>
       </ul>
-    </section>
+    </header>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Reach me at <a href="mailto:you@example.com">you@example.com</a>.</p>
-    </section>
-  </main>
+    <main>
+      <section class="block">
+        <h2>Summary</h2>
+        <p>IT student focused on game development (Unity, C#), also comfortable with Java, Python and web (HTML/CSS/JS). Completed NS as [vocation], ORD [Mon YYYY]. Looking for [internship / junior game developer / software role].</p>
+      </section>
 
-  <footer class="siteFooter">
-    <p>&copy; <span id="year"></span> My Site</p>
-  </footer>
+      <section class="block">
+        <h2>Projects</h2>
+        <div>
+          <article class="entry">
+            <div class="entryHead">
+              <h3>[Game title]</h3>
+              <span class="meta">Unity, C#</span>
+            </div>
+            <ul class="points">
+              <li>One line on what it is, e.g. a historical colony sim in the style of RimWorld.</li>
+              <li>Built [system, e.g. job/task AI, pathfinding] that [result, e.g. handles 50+ agents].</li>
+            </ul>
+            <p class="links"><a href="#">Source code</a><a href="#">Playable build</a><a href="#">Gameplay video</a></p>
+          </article>
 
-  <script src="javascript/script.js"></script>
+          <article class="entry">
+            <div class="entryHead">
+              <h3>[Project 2]</h3>
+              <span class="meta">Java or Python</span>
+            </div>
+            <ul class="points">
+              <li>What it does, what you built, and any result or number.</li>
+            </ul>
+            <p class="links"><a href="#">Source code</a></p>
+          </article>
+
+          <article class="entry">
+            <div class="entryHead">
+              <h3>This website</h3>
+              <span class="meta">HTML, CSS, JavaScript</span>
+            </div>
+            <ul class="points">
+              <li>Hand-coded resume page hosted on GitHub Pages, with a dark mode toggle and print-ready layout.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Skills</h2>
+        <dl class="skills">
+          <dt>Languages</dt><dd>C#, Java, Python, HTML/CSS/JS</dd>
+          <dt>Tools</dt><dd>Unity, Git/GitHub, [Visual Studio, VS Code, Blender]</dd>
+          <dt>Concepts</dt><dd>OOP, game loop, pathfinding/AI, UI systems, save/load, version control</dd>
+        </dl>
+      </section>
+
+      <section class="block">
+        <h2>Education</h2>
+        <article class="entry">
+          <div class="entryHead">
+            <h3>[Diploma/Degree in ___], [School]</h3>
+            <span class="meta">[Mon YYYY – Mon YYYY]</span>
+          </div>
+          <p class="detail">Relevant modules: [OOP, Data Structures, Game Programming]</p>
+        </article>
+      </section>
+
+      <section class="block">
+        <h2>National Service</h2>
+        <article class="entry">
+          <div class="entryHead">
+            <h3>[Rank / Vocation], [Unit]</h3>
+            <span class="meta">[Mon YYYY – Mon YYYY]</span>
+          </div>
+          <ul class="points">
+            <li>[Led / trained / managed] [number] people or [number] pieces of equipment.</li>
+            <li>[Responsibility showing discipline, reliability, working under pressure.]</li>
+            <li>[Any admin tools you built, e.g. trackers, forms, Excel automation.]</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="block">
+        <h2>Languages</h2>
+        <p>English, [Mandarin / others]</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="./javascript/script.js"></script>
 </body>
 </html>
